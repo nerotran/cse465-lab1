@@ -53,7 +53,7 @@
 
 (define (distance x1 y1 x2 y2)
 ;;; FILL THIS IN
-(sqrt (+ (hyp(- x2 x1)) (hyp(- y2 y1))))
+(sqrt (+ (hyp x2 x1) (hyp y2 y1)))
 )
 
 (display "Distance")(newline)
