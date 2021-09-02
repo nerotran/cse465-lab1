@@ -16,13 +16,18 @@ clean:
 basics.output: basics.scm 
 	@(scheme --quiet < basics.scm > basics.output) 
 
+Counter.class: Counter.java
+	@(javac Counter.java)
+
 Counter.output: Counter.class
-	@(java Counter.class > Counter.output)
+	@(java Counter > Counter.output)
 
 update:
 	git pull https://gitlab.csi.miamioh.edu/cse465/instructor/lab01.git master
 
 submit: update check
+	git add -u 
+	git commit -m "Final submission"
 	git push origin master
 
 # This uses grep to make sure there are no for-loops or while-loops
