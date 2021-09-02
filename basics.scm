@@ -134,8 +134,8 @@
 (define (computeGrossPay hours rate)
 ;;; FILL THIS IN
 ;;; Hours over 40 are given time and half. Hours over 60 are given double time.
-	(cond ((< hours 40) (+ (* 40 rate) (* (- hours 40) (* rate 1.5))))
-		  ((< hours 60) (+ (+ (* 40 rate) (* 20 (* rate 1.5))) (* (- hours 60) (* rate 2))))
+	(cond ((and (> hours 40) (< hours 60)) (+ (* 40 rate) (* (- hours 40) (* rate 1.5))))
+		  ((> hours 60) (+ (+ (* 40 rate) (* 20 (* rate 1.5))) (* (- hours 60) (* rate 2))))
 		  (* hours rate)
 		)
 )
