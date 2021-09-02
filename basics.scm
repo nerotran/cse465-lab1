@@ -54,7 +54,7 @@
 
 (define (distance x1 y1 x2 y2)
 ;;; FILL THIS IN
-(sqrt (+ sqr (- x2 x1) sqr(- y2 y1) ) )
+(sqrt (+ sqr(- x2 x1) sqr(- y2 y1) ) )
 )
 
 (display "Distance")(newline)
