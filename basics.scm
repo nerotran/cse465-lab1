@@ -36,6 +36,7 @@
 
 (display "Your Lambda for the perimeter:")(newline)
 ;; FILL IT IN HERE
+(display ((lambda (x y) (+ (* x 2) (* y 2)) 4 5))
 (newline)
 
 
