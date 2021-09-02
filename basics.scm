@@ -116,6 +116,11 @@
 
 (define (quadrant x y)
 ;;; FILL THIS IN
+	(cond ((and (>= x 0) (>= y 0)) 1)
+		  ((and (< x 0) (>= y 0)) 2)
+		  ((and (< x 0) (< y 0)) 3)
+		  (4)
+		)
 )
 
 
