@@ -103,7 +103,8 @@
 ;  --+--
 ;  3 | 4
 (define (isInQuadrant1 x y)
-;;; FILL THIS IN
+	;;; FILL THIS IN
+	(if (and (> x 0) (> y 0)) #t #f)
 )
 
 (display "IsInQuadrant1:")(newline)
