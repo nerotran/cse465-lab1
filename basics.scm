@@ -54,7 +54,7 @@
 
 (define (distance x1 y1 x2 y2)
 ;;; FILL THIS IN
-(hyp (- x2 x1) (- y2 y1))
+	(hyp (- x2 x1) (- y2 y1))
 )
 
 (display "Distance")(newline)
@@ -72,7 +72,9 @@
 
 ;; A number is small if it is less than 10
 (define (isSmall x)
-;;; FILL THIS IN	
+;;; FILL THIS IN
+	(cond (< x 10) #t)
+	(#f)
 )
 
 (display "isSmall")(newline)
