@@ -73,8 +73,7 @@
 ;; A number is small if it is less than 10
 (define (isSmall x)
 ;;; FILL THIS IN
-	(cond (< x 10) #t)
-	(#f)
+	(if (< x 10) #t #f)
 )
 
 (display "isSmall")(newline)
